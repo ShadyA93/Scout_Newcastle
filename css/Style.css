@@ -1,153 +1,90 @@
-/* Basic reset */
-* {
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-body {
-    font-family: 'Times New Roman', Times, serif; /* Using a serif font to match */
-    color: #faf3e0; /* Darker color to match the title in the image */
-    line-height: 1.6;
-    position: relative;
-    font-size: 20px; /* Increase base font size for the body text */
-    background: transparent;
-}
-
-/* Background video */
-#bg-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
-    object-fit: cover;
-    background: transparent;
-}
-
-/* Main Title Styling (to match the style in the image) */
-.main-title {
-    font-family: 'Times New Roman', Times, serif; /* Serif font for the title */
-    font-size: 64px; /* Adjust the font size */
-    font-weight: bold; /* Make it bold */
-    text-align: left; /* Left align the text */
-    margin-top: 50px;
-    margin-bottom: 10px;
-    color: #faf3e0;  /* Darker text color like the image */
-}
-
-/* Subheading Styling (Smaller italic text below the main title) */
-.subheading {
-    font-family: 'Times New Roman', Times, serif; /* Same serif font */
-    font-size: 30px; /* Smaller font size for the subheading */
-    font-style: italic; /* Make the subheading italic */
-    text-align: left; /* Left align */
-    margin-bottom: 30px; /* Adds space after the subheading */
-    color: #faf3e0; /* Match the text color with the main title */
-}
-
-/* Paragraph styling with increased text size and spacing */
-p {
-    font-size: 24px; /* Increased font size for body text */
-    margin-bottom: 25px;
-}
-/* List Item Styling */
-li {
-    font-size: 24px; /* Increase the text size of list items */
-    margin-bottom: 10px;
-}
-
-/* Customize bullet size using ::marker */
-li::marker {
-    font-size: 36px; /* Increase only the bullet size */
-    color: #0073e6; /* Optional: Change bullet color */
-}
-
-/* Section styling */
-section {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    z-index: 1;
-    background: transparent;
-}
-
-/* Link Styling */
-a {
-    color: #0073e6;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Footer styling */
-footer {
-    background-color: #0073e6;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
+/* Background container with image as the background */
+.background-container {
     position: relative;
     width: 100%;
+    min-height: 100vh; /* Ensures the background covers the entire viewport */
+    background-image: url('89227347_106372954308706_932948217601982464_n.jpg'); /* Path to your background image */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents repeating of the background image */
+    background-attachment: fixed; /* Fixes the background while scrolling */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Add transparency to the content area */
+.background-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent overlay */
+    z-index: 0; /* Stays behind the text */
 }
 
-/* Image styling */
-img {
-    margin-top: 10px;
-    background: transparent;
+/* Style the header */
+header {
+    position: relative; /* Content stays on top of the background */
+    color: white; /* White text for better contrast */
+    z-index: 1; /* Keep content above the overlay */
+    padding: 30px;
 }
-/* Mobile and Tablet View */
-@media screen and (max-width: 768px) {
-    body {
-        font-size: 18px;
-        line-height: 1.5;
-    }
 
-    .main-title {
-        font-size: 40px;
-        text-align: center;
-        margin-top: 20px;
-    }
+header h1 {
+    font-size: 3em; /* Large heading */
+}
 
-    .subheading {
-        font-size: 20px;
-        text-align: center;
-        margin-bottom: 20px;
-    }
+header p {
+    font-size: 1.5em; /* Larger introductory text */
+}
 
-    p {
-        font-size: 20px;
-        margin-bottom: 20px;
-    }
+/* Style the navigation bar */
+nav {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
 
-    section {
-        padding: 15px;
-        width: 100%;
-    }
+nav a {
+    color: white;
+    padding: 14px 0;
+    text-decoration: none;
+    display: block;
+    font-size: 1.5em;
+}
 
-    li {
-        font-size: 20px;
-    }
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Light transparent hover effect */
+    color: black;
+}
 
-    li::marker {
-        font-size: 28px;
-    }
+/* Style the content section */
+section {
+    position: relative;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Light transparent background for readability */
+    color: black;
+    z-index: 1;
+    border-radius: 10px; /* Rounded corners */
+}
 
-    footer {
-        font-size: 18px;
-        padding: 15px 0;
-    }
+section h2 {
+    font-size: 2.5em; /* Larger headings in the section */
+}
 
-    img {
-        width: 100%;
-        height: auto;
-    }
-
-    h1, h2, h3 {
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
+section p {
+    font-size: 1.2em; /* Larger text for the paragraphs */
 }
