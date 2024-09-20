@@ -11,19 +11,17 @@ body {
     line-height: 1.6;
     position: relative;
     font-size: 20px; /* Increase base font size for the body text */
-    background: transparent;
+    
+    /* New image background */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents repeating the image */
+    background-attachment: fixed; /* Keeps the background fixed when scrolling */
 }
 
-/* Background video */
+/* Remove background video styling as it's not needed anymore */
 #bg-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
-    object-fit: cover;
-    background: transparent;
+    display: none; /* Optional: If you still have the video tag in HTML but want to hide it */
 }
 
 /* Main Title Styling (to match the style in the image) */
@@ -52,6 +50,7 @@ p {
     font-size: 24px; /* Increased font size for body text */
     margin-bottom: 25px;
 }
+
 /* List Item Styling */
 li {
     font-size: 24px; /* Increase the text size of list items */
@@ -70,7 +69,7 @@ section {
     margin: 0 auto;
     padding: 20px;
     z-index: 1;
-    background: transparent;
+    background: rgba(0, 0, 0, 0.5); /* Optional: Adds a slight transparent background for readability */
 }
 
 /* Link Styling */
@@ -99,6 +98,7 @@ img {
     margin-top: 10px;
     background: transparent;
 }
+
 /* Mobile and Tablet View */
 @media screen and (max-width: 768px) {
     body {
