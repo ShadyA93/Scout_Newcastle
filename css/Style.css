@@ -10,7 +10,7 @@ body {
     color: #faf3e0; /* Darker color to match the title in the image */
     line-height: 1.6;
     position: relative;
-    font-size: 20px; /* Increase base font size for the body text */
+    font-size: 24px; /* Increase base font size for the body text */
 }
 
 /* Remove background video styling as it's not needed anymore */
@@ -21,7 +21,7 @@ body {
 /* Main Title Styling (to match the style in the image) */
 .main-title {
     font-family: 'Times New Roman', Times, serif; /* Serif font for the title */
-    font-size: 64px; /* Adjust the font size */
+    font-size: 68px; /* Adjust the font size */
     font-weight: bold; /* Make it bold */
     text-align: left; /* Left align the text */
     margin-top: 50px;
@@ -32,7 +32,7 @@ body {
 /* Subheading Styling (Smaller italic text below the main title) */
 .subheading {
     font-family: 'Times New Roman', Times, serif; /* Same serif font */
-    font-size: 30px; /* Smaller font size for the subheading */
+    font-size: 50px; /* Smaller font size for the subheading */
     font-style: italic; /* Make the subheading italic */
     text-align: left; /* Left align */
     margin-bottom: 30px; /* Adds space after the subheading */
@@ -41,19 +41,19 @@ body {
 
 /* Paragraph styling with increased text size and spacing */
 p {
-    font-size: 24px; /* Increased font size for body text */
+    font-size: 26px; /* Increased font size for body text */
     margin-bottom: 25px;
 }
 
 /* List Item Styling */
 li {
-    font-size: 24px; /* Increase the text size of list items */
+    font-size: 26px; /* Increase the text size of list items */
     margin-bottom: 10px;
 }
 
 /* Customize bullet size using ::marker */
 li::marker {
-    font-size: 36px; /* Increase only the bullet size */
+    font-size: 38px; /* Increase only the bullet size */
     color: #0073e6; /* Optional: Change bullet color */
 }
 
@@ -101,19 +101,19 @@ img {
     }
 
     .main-title {
-        font-size: 40px;
+        font-size: 44px;
         text-align: center;
         margin-top: 20px;
     }
 
     .subheading {
-        font-size: 20px;
+        font-size: 22px;
         text-align: center;
         margin-bottom: 20px;
     }
 
     p {
-        font-size: 20px;
+        font-size: 22px;
         margin-bottom: 20px;
     }
 
@@ -123,7 +123,7 @@ img {
     }
 
     li {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     li::marker {
@@ -131,7 +131,7 @@ img {
     }
 
     footer {
-        font-size: 18px;
+        font-size: 20px;
         padding: 15px 0;
     }
 
