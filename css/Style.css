@@ -8,20 +8,15 @@
 body {
     font-family: 'Times New Roman', Times, serif; /* Using a serif font to match */
     color: #faf3e0; /* Darker color to match the title in the image */
-    line-height: 1.6;
+    line-height: 1.8; /* Slightly increased line height for readability */
     position: relative;
-    font-size: 24px; /* Increase base font size for the body text */
-}
-
-/* Remove background video styling as it's not needed anymore */
-#bg-video {
-    display: none; /* Optional: If you still have the video tag in HTML but want to hide it */
+    font-size: 28px; /* Increase base font size for the body text */
 }
 
 /* Main Title Styling (to match the style in the image) */
 .main-title {
     font-family: 'Times New Roman', Times, serif; /* Serif font for the title */
-    font-size: 68px; /* Adjust the font size */
+    font-size: 76px; /* Increased font size for the main title */
     font-weight: bold; /* Make it bold */
     text-align: left; /* Left align the text */
     margin-top: 50px;
@@ -32,7 +27,7 @@ body {
 /* Subheading Styling (Smaller italic text below the main title) */
 .subheading {
     font-family: 'Times New Roman', Times, serif; /* Same serif font */
-    font-size: 50px; /* Smaller font size for the subheading */
+    font-size: 54px; /* Increased font size for the subheading */
     font-style: italic; /* Make the subheading italic */
     text-align: left; /* Left align */
     margin-bottom: 30px; /* Adds space after the subheading */
@@ -41,19 +36,19 @@ body {
 
 /* Paragraph styling with increased text size and spacing */
 p {
-    font-size: 26px; /* Increased font size for body text */
+    font-size: 30px; /* Increased font size for body text */
     margin-bottom: 25px;
 }
 
 /* List Item Styling */
 li {
-    font-size: 26px; /* Increase the text size of list items */
+    font-size: 30px; /* Increase the text size of list items */
     margin-bottom: 10px;
 }
 
 /* Customize bullet size using ::marker */
 li::marker {
-    font-size: 38px; /* Increase only the bullet size */
+    font-size: 40px; /* Increase only the bullet size */
     color: #0073e6; /* Optional: Change bullet color */
 }
 
@@ -70,6 +65,7 @@ section {
 a {
     color: #0073e6;
     text-decoration: none;
+    font-size: 30px; /* Increase link text size */
 }
 
 a:hover {
@@ -85,6 +81,7 @@ footer {
     position: relative;
     width: 100%;
     bottom: 0;
+    font-size: 26px; /* Increased font size for the footer */
 }
 
 /* Image styling */
@@ -96,24 +93,24 @@ img {
 /* Mobile and Tablet View */
 @media screen and (max-width: 768px) {
     body {
-        font-size: 18px;
-        line-height: 1.5;
+        font-size: 20px;
+        line-height: 1.6;
     }
 
     .main-title {
-        font-size: 44px;
+        font-size: 48px;
         text-align: center;
         margin-top: 20px;
     }
 
     .subheading {
-        font-size: 22px;
+        font-size: 30px;
         text-align: center;
         margin-bottom: 20px;
     }
 
     p {
-        font-size: 22px;
+        font-size: 24px;
         margin-bottom: 20px;
     }
 
@@ -123,15 +120,15 @@ img {
     }
 
     li {
-        font-size: 22px;
+        font-size: 24px;
     }
 
     li::marker {
-        font-size: 28px;
+        font-size: 32px;
     }
 
     footer {
-        font-size: 20px;
+        font-size: 22px;
         padding: 15px 0;
     }
 
