@@ -11,12 +11,6 @@ body {
     line-height: 1.6;
     position: relative;
     font-size: 20px; /* Increase base font size for the body text */
-    
-    /* New image background */
-    background-size: cover; /* Ensures the image covers the entire background */
-    background-position: center center; /* Centers the background image */
-    background-repeat: no-repeat; /* Prevents repeating the image */
-    background-attachment: fixed; /* Keeps the background fixed when scrolling */
 }
 
 /* Remove background video styling as it's not needed anymore */
