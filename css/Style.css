@@ -10,7 +10,7 @@ body {
     position: relative;
     width: 100%;
     min-height: 100vh; /* Ensures the background covers the entire viewport */
-    background-image: url('89227347_106372954308706_932948217601982464_n.jpg'); /* Path to your background image */
+    background-image: url('../89227347_106372954308706_932948217601982464_n.jpg'); /* Path to your background image */
     background-size: cover; /* Ensures the image covers the entire background */
     background-position: center; /* Centers the background image */
     background-repeat: no-repeat; /* Prevents repeating of the background image */
