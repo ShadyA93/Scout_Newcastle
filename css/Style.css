@@ -1,16 +1,36 @@
-/* Apply styles to the body */
+/* Apply the background image to the body */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-image: url('89227347_106372954308706_932948217601982464_n.jpg'); /* Path to your background image */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents repeating of the background image */
+    background-attachment: fixed; /* Fixes the background while scrolling */
+    position: relative;
+}
+
+/* Add a semi-transparent overlay to the body */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the transparency with rgba, 0.5 means 50% transparent */
+    z-index: 0; /* Set the overlay behind the content */
 }
 
 /* Style the header */
 header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 15px;
+    position: relative; /* Ensure content is above the background */
+    background-color: transparent; /* No background color */
+    color: white; /* White text for contrast */
     text-align: center;
+    z-index: 1; /* Keeps the content above the background */
+    padding: 30px;
 }
 
 header h1 {
@@ -23,29 +43,34 @@ header p {
 
 /* Style the navigation bar */
 nav {
-    background-color: #333;
-    padding: 20px;
+    position: relative;
+    background-color: transparent; /* No background color for the nav */
+    z-index: 1;
     text-align: center;
 }
 
 nav a {
     color: white;
-    padding: 10px 0; /* Adjust padding for vertical spacing */
+    padding: 14px 0; /* Adjust padding for vertical spacing */
     text-decoration: none;
     display: block; /* Ensures each link appears on a new line */
     font-size: 1.5em; /* Makes the text bigger but not as large as the headings */
 }
 
 nav a:hover {
-    background-color: #ddd;
+    background-color: rgba(255, 255, 255, 0.3); /* Light semi-transparent hover effect */
     color: black;
 }
 
 /* Style the content section */
 section {
+    position: relative;
     margin: 20px;
     padding: 20px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.8); /* Light transparent background for readability */
+    color: black; /* Black text for contrast */
+    z-index: 1;
+    border-radius: 10px; /* Rounded corners */
 }
 
 section h2 {
