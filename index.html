@@ -5,11 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>St. George Scout - Newcastle</title>
     <link rel="stylesheet" href="Style.css"> <!-- Link to your external CSS file -->
+    <style>
+        /* Optional: You can also move this CSS to your external file */
+        .background-container {
+            position: relative;
+            background-image: url('89227347_106372954308706_932948217601982464_n.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Transparent overlay */
+        .background-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Adjust transparency here */
+            z-index: -1; /* Ensures the overlay is behind the content */
+        }
+
+        /* Ensure the content is above the overlay */
+        header, nav, section {
+            position: relative;
+            z-index: 1;
+        }
+
+        nav a {
+            margin: 0 10px;
+            color: white; /* Style for the links */
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Background container with inline CSS for background image -->
-    <div class="background-container" style="background-image: url('89227347_106372954308706_932948217601982464_n.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+    <!-- Background container with transparent overlay -->
+    <div class="background-container">
         <header>
             <h1 style="color: white;">Welcome to St. George Scout - Newcastle</h1>
             <p style="color: white;">Discover Adventure, Build Leadership, and Make Lifelong Friends!</p>
