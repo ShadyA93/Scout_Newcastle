@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - St. George Scout</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your external CSS file -->
+    <style>
+        /* Style the background container with a relative position */
+        .background-container {
+            position: relative; /* Important for the overlay to work */
+            background-image: url('89227347_106372954308706_932948217601982464_n.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Create a semi-transparent overlay */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.7); /* Adjust the transparency level here */
+            z-index: 0; /* Ensure the overlay stays behind the content */
+        }
+
+        /* Ensure that the text and other content are above the overlay */
+        header, nav, section {
+            position: relative;
+            z-index: 1; /* Ensure text stays on top of the overlay */
+        }
+
+        /* Style links to ensure they are visible */
+        nav a {
+            margin: 0 10px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Background container with overlay for transparency -->
+    <div class="background-container">
+        <!-- The semi-transparent overlay -->
+        <div class="overlay"></div>
+
+        <header>
+            <h1 style="color: white;">Our Services</h1>
+        </header>
+
+        <nav>
+            <a href="index.html" style="color: white;">Home</a>
+            <a href="about.html" style="color: white;">About the Service</a>
+            <a href="what-is-scout.html" style="color: white;">What is the Scout?</a>
+            <a href="curriculum.html" style="color: white;">Curriculum</a>
+            <a href="services.html" style="color: white;">Services</a>
+            <a href="join-us.html" style="color: white;">Join Us</a>
+        </nav>
+
+        <section>
+            <h2 style="color: white;">What We Provide</h2>
+            <p style="color: white;">We provide a range of services including weekly meetings, camping trips, survival training, and community service. Scouts also get the chance to earn badges for mastering new skills and achieving milestones in their journey.</p>
+        </section>
+    </div>
+
+</body>
+</html>
