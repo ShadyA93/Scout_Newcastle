@@ -5,6 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About the Service - St. George Scout</title>
     <link rel="stylesheet" href="Style.css">
+    <style>
+        /* Style the background container with a relative position */
+        .background-container {
+            position: relative; /* Important for the overlay to work */
+            background-image: url('89227347_106372954308706_932948217601982464_n.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Create a semi-transparent overlay */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.7); /* Adjust the transparency level here */
+            z-index: 0; /* Ensure the overlay stays behind the content */
+        }
+
+        /* Ensure that the text and other content are above the overlay */
+        header, nav, section {
+            position: relative;
+            z-index: 1; /* Ensure text stays on top of the overlay */
+        }
+
+        /* Style links to ensure they are visible */
+        nav a {
+            margin: 0 10px;
+            color: white;
+        }
+    </style>
 </head>
 <body>
 
