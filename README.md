@@ -1,4 +1,4 @@
-**# Scout_Newcastle**# St. George Scout Service
+# Scout_Newcastle**# St. George Scout Service
 
 **St. George Scout Service** is a community-driven platform dedicated to supporting and enhancing scouting activities. The platform serves as a hub for resources, event management, communication, and collaboration for members of the St. George Scout community. It aims to make scouting more accessible, organized, and enjoyable for scouts, leaders, and volunteers alike.
 
