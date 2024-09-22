@@ -39,6 +39,16 @@
             position: relative;
             z-index: 1; /* Ensure text stays on top of the overlay */
         }
+        /* Logo styling to scale down */
+        .logo {
+            position: absolute;
+            top: 20px; /* Distance from top */
+            left: 20px; /* Distance from left */
+            width: 50px; /* Set small fixed width */
+            height: auto; /* Maintain aspect ratio */
+            transform: scale(0.5); /* Scale down further */
+            z-index: 2; /* Ensure logo stays on top of the content */
+        }
         /* Remove bullets and adjust list styling */
         .link-list {
             list-style-type: none; /* Remove bullet points */
