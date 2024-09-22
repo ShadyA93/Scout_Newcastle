@@ -63,12 +63,14 @@ section {
 
 /* Link Styling */
 a {
-    color: #0073e6;
+    color: #1E90FF; /* Use a distinctive blue color for links */
     text-decoration: none;
     font-size: 30px !important; /* Increase link text size */
+    font-weight: bold; /* Make the links stand out more */
 }
 
 a:hover {
+    color: #00BFFF; /* Change link color on hover for better visibility */
     text-decoration: underline;
 }
 
