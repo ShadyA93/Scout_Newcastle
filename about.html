@@ -31,7 +31,7 @@
             bottom: 0;
             background-color: rgba(0, 0, 0, 0.7); /* Adjust the transparency level here */
             z-index: 0; /* Ensure the overlay stays behind the content */
-            pointer-events: none; /* Allow clickable elements on top of the overlay */
+            pointer-events: none; /* Disable mouse interactions for the overlay */
         }
 
         /* Ensure that the text and other content are above the overlay */
@@ -40,6 +40,28 @@
             z-index: 1; /* Ensure text stays on top of the overlay */
         }
 
+        /* Remove bullets and adjust list styling */
+        .link-list {
+            list-style-type: none; /* Remove bullet points */
+            padding: 0;
+            margin: 0;
+            font-size: 40px; /* Make the list larger */
+        }
+
+        .link-list li {
+            margin: 15px 0; /* Add spacing between list items */
+        }
+
+        .link-list li a {
+            text-decoration: none;
+            color: #1E90FF; /* Link color */
+            font-weight: bold;
+        }
+
+        .link-list li a:hover {
+            color: #00BFFF; /* Change link color on hover */
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -51,7 +73,15 @@
 
         <header>
             <h1 class="main-title">About the Service</h1>
+            <p>Discover the range of Scouting activities we provide at St. George Scout - Newcastle!</p>
         </header>
+
+        <section>
+            <h2 class="subheading">What We Offer</h2>
+            <p>At St. George Scout in Newcastle, we provide a wide range of Scouting activities designed to develop young people's confidence, teamwork, and leadership skills. Our weekly meetings, outdoor adventures, and service projects create a positive environment for growth and learning.</p>
+            <p>We offer exciting activities, camps, community projects, and much more. Whether you're new to Scouting or looking to take your involvement further, St. George Scout is the place for adventure, learning, and growth.</p>
+            <p>Explore our services, curriculum, and how you can join us today!</p>
+        </section>
 
         <footer>
             <ul class="link-list">
@@ -63,11 +93,6 @@
             </ul>
         </footer>
 
-        <section>
-            <h2 class="subheading">What We Offer</h2>
-            <p>At St. George Scout in Newcastle, we provide a wide range of Scouting activities designed to develop young people's confidence, teamwork, and leadership skills. Our weekly meetings, outdoor adventures, and service projects create a positive environment for growth and learning.</p>
-            <p>Our dedicated leaders work tirelessly to create safe and enriching programs for all participants.</p>
-        </section>
     </div>
 
 </body>
