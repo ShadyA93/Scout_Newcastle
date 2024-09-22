@@ -1,23 +1,75 @@
-/* Link list at the bottom */
-.link-list {
-    list-style-type: disc;
-    font-size: 40px !important; /* Make the link list bigger */
-    padding: 20px 0;
-    text-align: center;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St. George Scout - Newcastle</title>
+    <link rel="stylesheet" href="Style.css"> <!-- Link to your external CSS file -->
+    <style>
+        /* Style the background container with a relative position */
+        .background-container {
+            position: relative; /* Important for the overlay to work */
+            background-image: url('89227347_106372954308706_932948217601982464_n.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
 
-.link-list li {
-    margin: 15px 0;
-    font-size: 40px; /* Increased font size */
-}
+        /* Create a semi-transparent overlay */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.7); /* Adjust the transparency level here */
+            z-index: 0; /* Ensure the overlay stays behind the content */
+        }
 
-.link-list li a {
-    text-decoration: none; /* Remove underline */
-    color: #1E90FF; /* Set color */
-    font-weight: bold; /* Bold the links */
-}
+        /* Ensure that the text and other content are above the overlay */
+        header, nav, section {
+            position: relative;
+            z-index: 1; /* Ensure text stays on top of the overlay */
+        }
+    </style>
+</head>
+<body>
 
-.link-list li a:hover {
-    color: #00BFFF; /* Change link color on hover */
-    text-decoration: underline; /* Add underline on hover */
-}
+    <!-- Background container with overlay for transparency -->
+    <div class="background-container">
+        <!-- The semi-transparent overlay -->
+        <div class="overlay"></div>
+
+        <header>
+            <h1 class="main-title">Welcome to St. George Scout - Newcastle</h1>
+            <p>Discover Adventure, Build Leadership, and Make Lifelong Friends!</p>
+        </header>
+
+        <section>
+            <h2 class="subheading">Introduction</h2>
+            <p>St. George Scout in Newcastle is a local chapter of the global Scouting movement, dedicated to nurturing leadership, teamwork, and outdoor skills in young people. Through our programs, we inspire Scouts to become active citizens, foster a love for nature, and develop skills that will benefit them throughout their lives.</p>
+            <p>We offer exciting activities, camps, community projects, and much more. Whether you're new to Scouting or looking to take your involvement further, St. George Scout is the place for adventure, learning, and growth.</p>
+            <p>Explore our services, curriculum, and how you can join us today!</p>
+        </section>
+
+        <footer>
+            <ul class="link-list">
+                <li><a href="about.html">About the Service</a></li>
+                <li><a href="what-is-scout.html">What is the Scout?</a></li>
+                <li><a href="curriculum.html">Curriculum</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="join-us.html">Join Us</a></li>
+            </ul>
+        </footer>
+
+    </div>
+
+</body>
+</html>
