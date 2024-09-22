@@ -185,7 +185,7 @@ footer {
 /* Logo styling - position top-left */
 .logo {
     position: absolute;
-    top: 20px; /* Distance from top */
+    top: 5px; /* Distance from top */
     left: 20px; /* Distance from left */
     width: 30px !important; /* Set a very small width */
     height: 30px !important; /* Set a very small height */
