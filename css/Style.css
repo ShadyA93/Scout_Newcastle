@@ -70,33 +70,59 @@ footer {
     position: relative;
     width: 100%;
     bottom: 0;
+    z-index: 2; /* Ensure footer is above the overlay */
     font-size: 30px !important; /* Increase font size for footer */
 }
 
 /* Link list at the bottom */
 .link-list {
-    list-style-type: disc;
-    font-size: 40px !important; /* Make the link list bigger */
-    padding: 20px 0;
-    text-align: center;
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    font-size: 40px; /* Make the list larger */
 }
 
 .link-list li {
-    margin: 15px 0;
-    font-size: 40px; /* Increased font size */
+    margin: 15px 0; /* Add spacing between list items */
 }
 
-/* Styling for clickable links within the bullet points */
 .link-list li a {
-    text-decoration: none; /* Remove underline */
-    color: #1E90FF; /* Set link color to DodgerBlue */
-    font-weight: bold; /* Bold the links */
-    font-size: inherit; /* Inherit the larger font size from the list */
+    text-decoration: none;
+    color: #1E90FF; /* Link color */
+    font-weight: bold;
 }
 
 .link-list li a:hover {
-    color: #00BFFF; /* Change link color to DeepSkyBlue on hover */
-    text-decoration: underline; /* Add underline on hover */
+    color: #00BFFF; /* Change link color on hover */
+    text-decoration: underline;
+}
+
+/* Fix the overlay positioning */
+.background-container {
+    position: relative; /* Important for the overlay to work */
+    background-image: url('89227347_106372954308706_932948217601982464_n.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1; /* Ensure the content is above the overlay */
+}
+
+/* Create a semi-transparent overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust the transparency level here */
+    z-index: 0; /* Ensure the overlay stays behind the content */
 }
 
 /* Mobile and Tablet View */
