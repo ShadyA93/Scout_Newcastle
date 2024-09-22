@@ -5,13 +5,13 @@
     box-sizing: border-box;
 }
 
-/* Change text to off-white */
+/* Increase the font size for all text and change to off-white */
 body {
     font-family: 'Times New Roman', Times, serif;
-    color: #f8f8f8; /* Off-white text */
+    color: #f8f8f8 !important; /* Off-white text color */
     line-height: 1.8;
     position: relative;
-    font-size: 38px !important; /* Increase base font size for the body text */
+    font-size: 40px !important; /* Increase base font size for the body text */
 }
 
 /* Main Title Styling */
@@ -22,7 +22,7 @@ body {
     text-align: left;
     margin-top: 50px;
     margin-bottom: 10px;
-    color: #f8f8f8; /* Off-white main title */
+    color: #f8f8f8 !important; /* Off-white main title */
 }
 
 /* Subheading Styling */
@@ -32,27 +32,27 @@ body {
     font-style: italic;
     text-align: left;
     margin-bottom: 30px;
-    color: #f8f8f8; /* Off-white subheading */
+    color: #f8f8f8 !important; /* Off-white subheading */
 }
 
 /* Paragraph styling */
 p {
     font-size: 42px !important; /* Further increase font size for paragraphs */
     margin-bottom: 25px;
-    color: #f8f8f8; /* Off-white paragraph text */
+    color: #f8f8f8 !important; /* Off-white paragraph text */
 }
 
 /* List Item Styling */
 li {
     font-size: 42px !important; /* Further increase the text size of list items */
     margin-bottom: 10px;
-    color: #f8f8f8; /* Off-white list items */
+    color: #f8f8f8 !important; /* Off-white list items */
 }
 
 /* Customize bullet size and color */
 li::marker {
     font-size: 46px !important; /* Increase bullet size */
-    color: #1E90FF; /* Change bullet color to blue (DodgerBlue) */
+    color: #1E90FF !important; /* Change bullet color to blue (DodgerBlue) */
 }
 
 /* Section styling */
@@ -66,15 +66,15 @@ section {
 
 /* Footer styling */
 footer {
-    background-color: #0000FF; /* Change footer color to standard blue */
-    color: white;
-    text-align: left; /* Align footer to the left */
-    padding: 5px 20px; /* Reduce padding for smaller size */
+    background-color: #0000FF !important; /* Change footer color to standard blue */
+    color: white !important;
+    text-align: left !important; /* Align footer to the left */
+    padding: 5px 20px !important; /* Reduce padding for smaller size */
     position: relative;
     width: 100%;
     bottom: 0;
     z-index: 2; /* Ensure footer is above the overlay */
-    font-size: 22px !important; /* Make footer font smaller */
+    font-size: 20px !important; /* Make footer font smaller */
 }
 
 /* Link list at the bottom */
@@ -82,7 +82,7 @@ footer {
     list-style-type: none; /* Remove bullet points */
     padding: 0;
     margin: 0;
-    font-size: 44px; /* Make the list larger */
+    font-size: 44px !important; /* Make the list larger */
 }
 
 .link-list li {
@@ -92,13 +92,13 @@ footer {
 /* Hyperlink Styling */
 .link-list li a {
     text-decoration: none;
-    color: #1E90FF; /* Change link color to blue (DodgerBlue) */
+    color: #1E90FF !important; /* Change link color to blue (DodgerBlue) */
     font-weight: bold;
 }
 
 .link-list li a:hover {
-    color: #00BFFF; /* Change link color to light blue (DeepSkyBlue) on hover */
-    text-decoration: underline;
+    color: #00BFFF !important; /* Change link color to light blue (DeepSkyBlue) on hover */
+    text-decoration: underline !important;
 }
 
 /* Fix the overlay positioning */
@@ -132,7 +132,7 @@ footer {
 /* Mobile and Tablet View */
 @media screen and (max-width: 768px) {
     body {
-        font-size: 30px !important;
+        font-size: 32px !important;
         line-height: 1.6;
     }
 
@@ -168,8 +168,8 @@ footer {
 
     footer {
         font-size: 20px !important;
-        padding: 10px 0;
-        text-align: left; /* Keep footer aligned to the left on mobile */
+        padding: 10px 0 !important;
+        text-align: left !important; /* Keep footer aligned to the left on mobile */
     }
 
     img {
