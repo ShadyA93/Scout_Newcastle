@@ -187,8 +187,8 @@ footer {
     position: absolute;
     top: 20px; /* Distance from top */
     left: 20px; /* Distance from left */
-    width: 5%; /* Very small width as 5% of the page width */
-    max-width: 50px; /* Set a small maximum width for larger screens */
+    width: 30px; /* Set a small fixed width */
     height: auto; /* Maintain aspect ratio */
     z-index: 2; /* Ensure logo stays on top of the content */
 }
+
