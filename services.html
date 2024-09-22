@@ -31,6 +31,7 @@
             bottom: 0;
             background-color: rgba(0, 0, 0, 0.7); /* Adjust the transparency level here */
             z-index: 0; /* Ensure the overlay stays behind the content */
+            pointer-events: none; /* Allow clickable elements on top of the overlay */
         }
 
         /* Ensure that the text and other content are above the overlay */
@@ -39,10 +40,27 @@
             z-index: 1; /* Ensure text stays on top of the overlay */
         }
 
-        /* Style links to ensure they are visible */
-        nav a {
-            margin: 0 10px;
-            color: white;
+        /* Remove bullets and adjust list styling */
+        .link-list {
+            list-style-type: none; /* Remove bullet points */
+            padding: 0;
+            margin: 0;
+            font-size: 40px; /* Make the list larger */
+        }
+
+        .link-list li {
+            margin: 15px 0; /* Add spacing between list items */
+        }
+
+        .link-list li a {
+            text-decoration: none;
+            color: #1E90FF; /* Link color */
+            font-weight: bold;
+        }
+
+        .link-list li a:hover {
+            color: #00BFFF; /* Change link color on hover */
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -54,22 +72,25 @@
         <div class="overlay"></div>
 
         <header>
-            <h1 style="color: white;">Our Services</h1>
+            <h1 class="main-title">Our Services</h1>
+            <p>Discover the variety of services we offer to help young Scouts grow and thrive.</p>
         </header>
 
-        <nav>
-            <a href="index.html" style="color: white;">Home</a>
-            <a href="about.html" style="color: white;">About the Service</a>
-            <a href="what-is-scout.html" style="color: white;">What is the Scout?</a>
-            <a href="curriculum.html" style="color: white;">Curriculum</a>
-            <a href="services.html" style="color: white;">Services</a>
-            <a href="join-us.html" style="color: white;">Join Us</a>
-        </nav>
-
         <section>
-            <h2 style="color: white;">What We Provide</h2>
-            <p style="color: white;">We provide a range of services including weekly meetings, camping trips, survival training, and community service. Scouts also get the chance to earn badges for mastering new skills and achieving milestones in their journey.</p>
+            <h2 class="subheading">What We Provide</h2>
+            <p>We provide a range of services including weekly meetings, camping trips, survival training, and community service. Scouts also get the chance to earn badges for mastering new skills and achieving milestones in their journey.</p>
         </section>
+
+        <footer>
+            <ul class="link-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About the Service</a></li>
+                <li><a href="what-is-scout.html">What is the Scout?</a></li>
+                <li><a href="curriculum.html">Curriculum</a></li>
+                <li><a href="join-us.html">Join Us</a></li>
+            </ul>
+        </footer>
+
     </div>
 
 </body>
