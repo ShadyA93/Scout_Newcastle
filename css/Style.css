@@ -129,17 +129,6 @@ footer {
     z-index: 0; /* Ensure the overlay stays behind the content */
 }
 
-/* Logo styling */
-.logo {
-    position: absolute;
-    top: 5px; /* Distance from top */
-    left: 20px; /* Distance from left */
-    width: 150px; /* Set small fixed width */
-    height: auto; /* Maintain aspect ratio */
-    transform: scale(1); /* Scale down further */
-    z-index: 1; /* Ensure logo stays on top of the content */
-}
-
 /* Mobile and Tablet View */
 @media screen and (max-width: 768px) {
     body {
@@ -192,13 +181,16 @@ footer {
         margin-top: 15px;
         margin-bottom: 15px;
     }
-
-    /* Logo styling for mobile */
-    .logo {
-        width: 30px !important;
-        height: 30px !important;
-        max-width: 30px !important;
-        max-height: 30px !important;
-        transform: scale(0.5); /* Scale down further */
-    }
+/* Logo styling - position top-left */
+/* Logo styling - position top-left */
+.logo {
+    position: absolute;
+    top: 5px; /* Distance from top */
+    left: 20px; /* Distance from left */
+    width: 30px !important; /* Set a very small width */
+    height: 30px !important; /* Set a very small height */
+    max-width: 30px !important; /* Ensure it does not exceed this size */
+    max-height: 30px !important; /* Ensure it does not exceed this size */
+    transform: scale(0.5); /* Scale down further */
+    z-index: 2; /* Ensure logo stays on top of the content */
 }
