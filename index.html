@@ -5,74 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>St. George Scout - Newcastle</title>
     <link rel="stylesheet" href="Style.css"> <!-- Link to your external CSS file -->
-    <style>
-        /* Style the background container with a relative position */
-        .background-container {
-            position: relative; /* Important for the overlay to work */
-            background-image: url('89227347_106372954308706_932948217601982464_n.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
-        /* Create a semi-transparent overlay */
-        .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, 0.7); /* Adjust the transparency level here */
-            z-index: 0; /* Ensure the overlay stays behind the content */
-            pointer-events: none; /* Disable mouse interactions for the overlay */
-        }
-
-        /* Ensure that the text and other content are above the overlay */
-        header, nav, section {
-            position: relative;
-            z-index: 1; /* Ensure text stays on top of the overlay */
-        }
-        /* Logo styling to scale down */
-        .logo {
-            position: absolute;
-            top: 5px; /* Distance from top */
-            left: 20px; /* Distance from left */
-            width: 150px; /* Set small fixed width */
-            height: auto; /* Maintain aspect ratio */
-            transform: scale(1); /* Scale down further */
-            z-index: 1; /* Ensure logo stays on top of the content */
-        }
-        /* Remove bullets and adjust list styling */
-        .link-list {
-            list-style-type: none; /* Remove bullet points */
-            padding: 0;
-            margin: 0;
-            font-size: 40px; /* Make the list larger */
-        }
-
-        .link-list li {
-            margin: 15px 0; /* Add spacing between list items */
-        }
-
-        .link-list li a {
-            text-decoration: none;
-            color: #1E90FF; /* Link color */
-            font-weight: bold;
-        }
-
-        .link-list li a:hover {
-            color: #00BFFF; /* Change link color on hover */
-            text-decoration: underline;
-        }
-
-    </style>
 </head>
 <body>
 
@@ -82,9 +14,8 @@
         <div class="overlay"></div>
         <header>
             <!-- Add the logo here -->
-            <img src="1233.png" alt="St. George Scout Logo" class="logo"> <!-- Replace 'logo.png' with the actual logo path -->
+            <img src="1233.png" alt="St. George Scout Logo" class="logo"> <!-- Replace '1233.png' with the actual logo path -->
 
-        <header>
             <h1 class="main-title">Welcome to St. George Scout - Newcastle</h1>
             <p>Discover Adventure, Build Leadership, and Make Lifelong Friends!</p>
         </header>
