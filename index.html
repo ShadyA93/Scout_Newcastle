@@ -38,6 +38,29 @@
             position: relative;
             z-index: 1; /* Ensure text stays on top of the overlay */
         }
+
+        /* Remove bullets and adjust list styling */
+        .link-list {
+            list-style-type: none; /* Remove bullet points */
+            padding: 0;
+            margin: 0;
+            font-size: 40px; /* Make the list larger */
+        }
+
+        .link-list li {
+            margin: 15px 0; /* Add spacing between list items */
+        }
+
+        .link-list li a {
+            text-decoration: none;
+            color: #1E90FF; /* Link color */
+            font-weight: bold;
+        }
+
+        .link-list li a:hover {
+            color: #00BFFF; /* Change link color on hover */
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
