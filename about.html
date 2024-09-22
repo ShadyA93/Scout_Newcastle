@@ -31,6 +31,7 @@
             bottom: 0;
             background-color: rgba(0, 0, 0, 0.7); /* Adjust the transparency level here */
             z-index: 0; /* Ensure the overlay stays behind the content */
+            pointer-events: none; /* Allow clickable elements on top of the overlay */
         }
 
         /* Ensure that the text and other content are above the overlay */
@@ -42,7 +43,14 @@
         /* Style links to ensure they are visible */
         nav a {
             margin: 0 10px;
-            color: white;
+            color: #1E90FF; /* Consistent with the link color used in Style.css */
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #00BFFF; /* Change link color on hover, consistent with Style.css */
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -54,22 +62,21 @@
         <div class="overlay"></div>
 
         <header>
-            <h1 style="color: white;">About the Service</h1>
+            <h1 class="main-title">About the Service</h1>
         </header>
 
         <nav>
-            <a href="index.html" style="color: white;">Home</a>
-            <a href="about.html" style="color: white;">About the Service</a>
-            <a href="what-is-scout.html" style="color: white;">What is the Scout?</a>
-            <a href="curriculum.html" style="color: white;">Curriculum</a>
-            <a href="services.html" style="color: white;">Services</a>
-            <a href="join-us.html" style="color: white;">Join Us</a>
+            <a href="index.html">Home</a>
+            <a href="what-is-scout.html">What is the Scout?</a>
+            <a href="curriculum.html">Curriculum</a>
+            <a href="services.html">Services</a>
+            <a href="join-us.html">Join Us</a>
         </nav>
 
         <section>
-            <h2 style="color: white;">What We Offer</h2>
-            <p style="color: white;">At St. George Scout in Newcastle, we provide a wide range of Scouting activities designed to develop young people's confidence, teamwork, and leadership skills. Our weekly meetings, outdoor adventures, and service projects create a positive environment for growth and learning.</p>
-            <p style="color: white;">Our dedicated leaders work tirelessly to create safe and enriching programs for all participants.</p>
+            <h2 class="subheading">What We Offer</h2>
+            <p>At St. George Scout in Newcastle, we provide a wide range of Scouting activities designed to develop young people's confidence, teamwork, and leadership skills. Our weekly meetings, outdoor adventures, and service projects create a positive environment for growth and learning.</p>
+            <p>Our dedicated leaders work tirelessly to create safe and enriching programs for all participants.</p>
         </section>
     </div>
 
