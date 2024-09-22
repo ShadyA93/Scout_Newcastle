@@ -181,14 +181,12 @@ footer {
         margin-top: 15px;
         margin-bottom: 15px;
     }
-}
 /* Logo styling - position top-left */
 .logo {
     position: absolute;
     top: 20px; /* Distance from top */
     left: 20px; /* Distance from left */
-    width: 30px; /* Set a small fixed width */
-    height: auto; /* Maintain aspect ratio */
+    width: 30px !important; /* Force a small fixed width */
+    height: auto !important; /* Maintain aspect ratio */
     z-index: 2; /* Ensure logo stays on top of the content */
 }
-
