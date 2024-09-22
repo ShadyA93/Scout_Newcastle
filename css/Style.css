@@ -61,18 +61,6 @@ section {
     background: rgba(0, 0, 0, 0.5);
 }
 
-/* Link Styling */
-a {
-    color: #1E90FF; /* Use a distinctive blue color for links */
-    text-decoration: none;
-    font-size: 36px !important; /* Increase link text size */
-}
-
-a:hover {
-    color: #00BFFF; /* Change link color on hover */
-    text-decoration: underline;
-}
-
 /* Footer styling */
 footer {
     background-color: #0073e6;
@@ -95,6 +83,20 @@ footer {
 
 .link-list li {
     margin: 15px 0;
+    font-size: 40px; /* Increased font size */
+}
+
+/* Styling for clickable links within the bullet points */
+.link-list li a {
+    text-decoration: none; /* Remove underline */
+    color: #1E90FF; /* Set link color to DodgerBlue */
+    font-weight: bold; /* Bold the links */
+    font-size: inherit; /* Inherit the larger font size from the list */
+}
+
+.link-list li a:hover {
+    color: #00BFFF; /* Change link color to DeepSkyBlue on hover */
+    text-decoration: underline; /* Add underline on hover */
 }
 
 /* Mobile and Tablet View */
