@@ -39,18 +39,16 @@
             position: relative;
             z-index: 1; /* Ensure text stays on top of the overlay */
         }
-
-        /* Logo styling to position it on the left of the background */
+        /* Logo styling to scale down */
         .logo {
             position: absolute;
-            top: 50%; /* Center vertically */
-            left: 20px; /* Adjust distance from the left */
+            top: 5px; /* Distance from top */
+            left: 20px; /* Distance from left */
             width: 150px; /* Set small fixed width */
             height: auto; /* Maintain aspect ratio */
-            transform: translateY(-50%); /* Ensure it's centered vertically */
-            z-index: 2; /* Ensure logo stays on top of the content */
+            transform: scale(1); /* Scale down further */
+            z-index: 1; /* Ensure logo stays on top of the content */
         }
-
         /* Remove bullets and adjust list styling */
         .link-list {
             list-style-type: none; /* Remove bullet points */
@@ -82,8 +80,8 @@
     <div class="background-container">
         <!-- The semi-transparent overlay -->
         <div class="overlay"></div>
-        
-        <!-- Add the logo here -->
+        <header>
+           <!-- Add the logo here -->
         <header>
             <img src="sCOUT 2 copy (1).png" alt="St. George Scout Logo" class="logo"> <!-- Replace 'logo.png' with the actual logo path -->
             
@@ -100,7 +98,7 @@
 
         <footer>
             <ul class="link-list">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About the Service</a></li>
                 <li><a href="what-is-scout.html">What is the Scout?</a></li>
                 <li><a href="curriculum.html">Curriculum</a></li>
                 <li><a href="services.html">Services</a></li>
