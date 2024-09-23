@@ -40,14 +40,14 @@
             z-index: 1; /* Ensure text stays on top of the overlay */
         }
 
-        /* Logo styling to scale down */
+        /* Logo styling to position it on the left of the background */
         .logo {
             position: absolute;
-            top: 5px; /* Distance from top */
-            left: 0px; /* Distance from left */
+            top: 50%; /* Center vertically */
+            left: 20px; /* Adjust distance from the left */
             width: 150px; /* Set small fixed width */
             height: auto; /* Maintain aspect ratio */
-            transform: scale(1); /* Scale down further */
+            transform: translateY(-50%); /* Ensure it's centered vertically */
             z-index: 2; /* Ensure logo stays on top of the content */
         }
 
