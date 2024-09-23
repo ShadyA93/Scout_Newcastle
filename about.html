@@ -40,7 +40,18 @@
             z-index: 1; /* Ensure text stays on top of the overlay */
         }
 
-/* Remove bullets and adjust list styling */
+        /* Logo styling similar to the other page */
+        .logo {
+            position: absolute;
+            top: 5px; /* Distance from top */
+            left: 20px; /* Distance from left */
+            width: 150px; /* Set small fixed width */
+            height: auto; /* Maintain aspect ratio */
+            transform: scale(1); /* Scale down further */
+            z-index: 1; /* Ensure logo stays on top of the content */
+        }
+
+        /* Remove bullets and adjust list styling */
         .link-list {
             list-style-type: none; /* Remove bullet points */
             padding: 0;
@@ -62,6 +73,7 @@
             color: #00BFFF; /* Change link color on hover */
             text-decoration: underline;
         }
+
     </style>
 </head>
 <body>
@@ -72,6 +84,9 @@
         <div class="overlay"></div>
 
         <header>
+            <!-- Add the logo here -->
+            <img src="1233.png" alt="St. George Scout Logo" class="logo"> <!-- Replace 'logo.png' with the actual logo path -->
+
             <h1 class="main-title">About the Service</h1>
             <p>Discover the range of Scouting activities we provide at St. George Scout - Newcastle!</p>
         </header>
