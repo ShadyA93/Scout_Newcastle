@@ -11,10 +11,10 @@ body {
     color: #f8f8f8 !important; /* Off-white text color */
     line-height: 1.8;
     font-size: 20px !important; /* Slightly larger base font size */
-    background-color: transparent !important; /* Make sure background is transparent */
+    background-color: transparent !important; /* Ensure no background */
 }
 
-/* Background container styling */
+/* Background container styling with a darker overlay */
 .background-container {
     position: relative;
     background-image: url('89227347_106372954308706_932948217601982464_n.jpg');
@@ -29,23 +29,25 @@ body {
     align-items: center; /* Center content horizontally */
     text-align: center; /* Center text alignment */
     padding: 0 20px; /* Add padding for better mobile view */
+    z-index: 1; /* Make sure the background has a lower z-index */
 }
 
-/* Create a semi-transparent overlay */
+/* Darker overlay to darken the background */
 .overlay {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7); /* Adjust the transparency level here */
-    z-index: 0; /* Ensure the overlay stays behind the content */
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background overlay */
+    z-index: 1; /* Ensure the overlay stays behind the content */
     pointer-events: none; /* Disable mouse interactions for the overlay */
 }
+
 /* Ensure that the text and other content are above the overlay */
 header, nav, section {
     position: relative;
-    z-index: 1; /* Ensure text stays on top of the overlay */
+    z-index: 2; /* Ensure text and links stay on top of the overlay */
 }
 
 /* Logo styling */
@@ -91,7 +93,7 @@ li {
     font-size: 24px !important; /* Increase size of list items */
     margin-bottom: 15px;
     color: blue !important; /* Set text color to blue */
-    text-align: center !important; /* Center list items */
+    text-align: left !important; /* Move list items to the left */
 }
 
 /* Link list styling */
@@ -102,6 +104,8 @@ li {
     font-size: 24px !important; /* Increase list font size */
     text-align: left; /* Move link list to the left */
     margin-left: 20px; /* Add margin to the left for better spacing */
+    position: relative; /* Set position to relative to control z-index */
+    z-index: 3; /* Ensure links appear above the background and overlay */
 }
 
 /* Hyperlink Styling */
@@ -122,14 +126,14 @@ section {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    z-index: 1;
+    z-index: 2;
     background: none !important; /* Remove black background */
 }
 
 /* Footer styling */
 footer {
     color: white !important;
-    text-align: center !important; /* Align footer to center */
+    text-align: left !important; /* Align footer to the left */
     padding: 5px 20px !important;
     font-size: 18px !important; /* Slightly increase footer font size */
 }
