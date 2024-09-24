@@ -5,8 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>St. George Scout - Newcastle</title>
     <link rel="stylesheet" href="css/Style.css"> <!-- Link to your external CSS file -->
+    <style>
+        /* You can add styles here for the dropdown if needed */
+        .version-selector {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            z-index: 1000;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .version-selector label {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+    </style>
 </head>
 <body>
+
+    <!-- Dropdown to allow the user to select between PC, Tablet, and Smartphone versions -->
+    <div class="version-selector">
+        <label for="version-select">Choose Version:</label>
+        <select id="version-select">
+            <option value="default">Default (Responsive)</option>
+            <option value="pc">PC Version</option>
+            <option value="tablet">Tablet Version</option>
+            <option value="smartphone">Smartphone Version</option>
+        </select>
+    </div>
 
     <!-- Background container with overlay for transparency -->
     <div class="background-container">
@@ -38,8 +67,33 @@
                 <li><a href="join-us.html">Join Us</a></li>
             </ul>
         </footer>
-
     </div>
+
+    <script>
+        // JavaScript to switch between versions
+        const selectElement = document.getElementById('version-select');
+
+        selectElement.addEventListener('change', function() {
+            // Remove any previously added version classes from the body
+            document.body.classList.remove('pc-version', 'tablet-version', 'smartphone-version');
+
+            // Add the selected version class based on the user's choice
+            switch (this.value) {
+                case 'pc':
+                    document.body.classList.add('pc-version');
+                    break;
+                case 'tablet':
+                    document.body.classList.add('tablet-version');
+                    break;
+                case 'smartphone':
+                    document.body.classList.add('smartphone-version');
+                    break;
+                default:
+                    // No class for default (responsive) version
+                    break;
+            }
+        });
+    </script>
 
 </body>
 </html>
