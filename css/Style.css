@@ -39,7 +39,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.8); /* Darker background overlay */
+    background-color: rgba(0, 0, 0, 0.7); /* Darker background overlay */
     z-index: 1; /* Ensure the overlay stays behind the content */
     pointer-events: none; /* Disable mouse interactions for the overlay */
 }
