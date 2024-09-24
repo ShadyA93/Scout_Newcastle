@@ -55,7 +55,7 @@ header, nav, section {
     position: fixed; /* Make the logo stay fixed on the page */
     top: 20px; /* Distance from the top */
     left: 20px; /* Align to the left with padding */
-    width: 150px; /* Set fixed width */
+    width: 170px; /* Set fixed width */
     height: auto; /* Maintain aspect ratio */
     z-index: 10; /* Ensure logo stays on top of the content */
 }
@@ -111,13 +111,14 @@ li {
 /* Hyperlink Styling */
 .link-list li a {
     text-decoration: none;
-    color: blue !important; /* Change link color to blue */
+    color: blue !important; /* Ensure the link color is blue */
     font-weight: bold;
-    background: none !important; /* Remove any background color */
+    padding: 10px 0; /* Add spacing to the links for better visibility */
+    display: block; /* Ensure the links are displayed as block elements */
 }
 
 .link-list li a:hover {
-    color: blue !important; /* Change link color on hover */
+    color: blue !important; /* Keep the hover effect */
     text-decoration: underline;
 }
 
