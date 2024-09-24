@@ -15,7 +15,7 @@ body {
 
 /* Background container styling */
 .background-container {
-    position: relative; /* Important for the overlay to work */
+    position: relative;
     background-image: url('89227347_106372954308706_932948217601982464_n.jpg');
     background-size: cover;
     background-position: center;
@@ -50,12 +50,12 @@ header, nav, section {
 
 /* Logo styling */
 .logo {
-    position: relative;
-    top: 20px; /* Distance from top */
-    left: 0; /* Align to the left */
-    width: 150px; /* Set small fixed width */
+    position: fixed; /* Make the logo stay fixed on the page */
+    top: 20px; /* Distance from the top */
+    left: 20px; /* Align to the left with padding */
+    width: 150px; /* Set fixed width */
     height: auto; /* Maintain aspect ratio */
-    z-index: 1; /* Ensure logo stays on top of the content */
+    z-index: 10; /* Ensure logo stays on top of the content */
 }
 
 /* Main Title Styling */
@@ -63,7 +63,7 @@ header, nav, section {
     font-family: 'Times New Roman', Times, serif;
     font-size: 28px !important; /* Adjusted size for the main title */
     font-weight: bold;
-    margin-top: 30px;
+    margin-top: 60px; /* Ensure the title is below the logo */
     margin-bottom: 10px;
     color: #f8f8f8 !important; /* Off-white main title */
 }
@@ -99,15 +99,13 @@ li {
     font-size: 24px !important; /* Increase list font size */
 }
 
-.link-list li {
-    margin: 10px 0; /* Add spacing between list items */
-}
-
 /* Hyperlink Styling */
 .link-list li a {
     text-decoration: none;
     color: blue !important; /* Change link color to blue */
     font-weight: bold;
+    background: none !important; /* Remove any background color */
+    display: inline-block; /* Ensure link is inline and no background behind it */
 }
 
 .link-list li a:hover {
