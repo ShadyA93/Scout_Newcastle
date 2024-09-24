@@ -115,7 +115,7 @@ li {
     font-weight: bold;
     background-color: lightgray; /* Add background behind text */
     padding: 10px 15px; /* Add padding to the background */
-    display: block; /* Display the links as block elements */
+    display: none; /* Display the links as block elements */
     border-radius: 8px; /* Optional: rounded corners for the background */
     margin-bottom: 10px; /* Add spacing between each link */
 }
