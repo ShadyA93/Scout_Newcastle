@@ -103,7 +103,7 @@ li {
     font-size: 32px !important; /* Increase list font size */
     position: relative; /* Make sure it stays in flow of content */
     width: 100%; /* Full width for the links */
-    text-align: left !important; /* Align links to the left */
+    text-align: center !important; /* Align links to the left */
     padding-left: 20px; /* Add some padding to the left */
     margin-top: auto; /* Push the links to the bottom */
     z-index: 3; /* Ensure links appear above the background */
