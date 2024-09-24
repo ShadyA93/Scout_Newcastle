@@ -5,155 +5,13 @@
     box-sizing: border-box;
 }
 
-/* General body styles for all devices */
+/* Font size adjustments for all text and change to off-white */
 body {
     font-family: 'Times New Roman', Times, serif;
-    color: #f8f8f8 !important;
+    color: #f8f8f8 !important; /* Off-white text color */
     line-height: 1.8;
-    background-color: transparent !important;
-}
-
-/* Default version for PC (larger screens) */
-@media only screen and (min-width: 1024px) {
-    body {
-        font-size: 20px !important; /* PC base font size */
-    }
-    .main-title {
-        font-size: 40px !important;
-    }
-    .subheading {
-        font-size: 32px !important;
-    }
-    p {
-        font-size: 22px !important;
-    }
-    li {
-        font-size: 26px !important;
-    }
-    .link-list {
-        font-size: 32px !important;
-    }
-}
-
-/* Tablet version (medium screens) */
-@media only screen and (max-width: 1024px) and (min-width: 768px) {
-    body {
-        font-size: 18px !important; /* Smaller font size for tablet */
-    }
-    .main-title {
-        font-size: 36px !important;
-    }
-    .subheading {
-        font-size: 30px !important;
-    }
-    p {
-        font-size: 20px !important;
-    }
-    li {
-        font-size: 24px !important;
-    }
-    .link-list {
-        font-size: 28px !important;
-    }
-}
-
-/* Smartphone version (smaller screens) */
-@media only screen and (max-width: 767px) {
-    body {
-        font-size: 16px !important; /* Smaller font size for smartphones */
-    }
-    .main-title {
-        font-size: 32px !important;
-    }
-    .subheading {
-        font-size: 28px !important;
-    }
-    p {
-        font-size: 18px !important;
-    }
-    li {
-        font-size: 22px !important;
-    }
-    .link-list {
-        font-size: 24px !important;
-    }
-}
-
-/* Version-specific classes for manual selection */
-
-/* Manual override for PC version */
-.pc-version body {
-    font-size: 20px !important;
-}
-
-.pc-version .main-title {
-    font-size: 40px !important;
-}
-
-.pc-version .subheading {
-    font-size: 32px !important;
-}
-
-.pc-version p {
-    font-size: 22px !important;
-}
-
-.pc-version li {
-    font-size: 26px !important;
-}
-
-.pc-version .link-list {
-    font-size: 32px !important;
-}
-
-/* Manual override for Tablet version */
-.tablet-version body {
-    font-size: 18px !important;
-}
-
-.tablet-version .main-title {
-    font-size: 36px !important;
-}
-
-.tablet-version .subheading {
-    font-size: 30px !important;
-}
-
-.tablet-version p {
-    font-size: 20px !important;
-}
-
-.tablet-version li {
-    font-size: 24px !important;
-}
-
-.tablet-version .link-list {
-    font-size: 28px !important;
-}
-
-/* Manual override for Smartphone version */
-.smartphone-version body {
-    font-size: 16px !important;
-}
-
-.smartphone-version .main-title {
-    font-size: 32px !important;
-}
-
-.smartphone-version .subheading {
-    font-size: 28px !important;
-}
-
-.smartphone-version p {
-    font-size: 18px !important;
-}
-
-.smartphone-version li {
-    font-size: 22px !important;
-}
-
-.smartphone-version .link-list {
-    font-size: 24px !important;
+    font-size: 20px !important; /* Slightly larger base font size */
+    background-color: transparent !important; /* Ensure no background */
 }
 
 /* Background container styling with a darker overlay */
@@ -167,102 +25,109 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: center;
-    padding: 0 20px;
-    z-index: 1;
+    justify-content: flex-start; /* Start content at the top */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text alignment */
+    padding: 0 20px; /* Add padding for better mobile view */
+    z-index: 1; /* Make sure the background has a lower z-index */
 }
 
-/* Darker overlay */
+/* Darker overlay to darken the background */
 .overlay {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 1;
-    pointer-events: none;
+    background-color: rgba(0, 0, 0, 0.7); /* Darker background overlay */
+    z-index: 1; /* Ensure the overlay stays behind the content */
+    pointer-events: none; /* Disable mouse interactions for the overlay */
 }
 
-/* Ensure that text and other content are above the overlay */
+/* Ensure that the text and other content are above the overlay */
 header, nav, section {
     position: relative;
-    z-index: 2;
+    z-index: 2; /* Ensure text and links stay on top of the overlay */
 }
 
 /* Logo styling */
 .logo {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    width: 170px;
-    height: auto;
-    z-index: 10;
+    position: fixed; /* Make the logo stay fixed on the page */
+    top: 20px; /* Distance from the top */
+    left: 20px; /* Align to the left with padding */
+    width: 170px; /* Set fixed width */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 10; /* Ensure logo stays on top of the content */
 }
 
 /* Main Title Styling */
 .main-title {
     font-family: 'Times New Roman', Times, serif;
+    font-size: 40px !important; /* Increase size for the main title */
     font-weight: bold;
     margin-bottom: 10px;
-    color: #f8f8f8 !important;
-    text-align: center !important;
+    color: #f8f8f8 !important; /* Off-white main title */
+    text-align: center !important; /* Ensure title is centered */
 }
 
 /* Subheading Styling */
 .subheading {
     font-family: 'Times New Roman', Times, serif;
+    font-size: 32px !important; /* Increase size for the subheading */
     font-style: italic;
     margin-bottom: 20px;
-    color: #f8f8f8 !important;
-    text-align: center !important;
+    color: #f8f8f8 !important; /* Off-white subheading */
+    text-align: center !important; /* Ensure subheading is centered */
 }
 
 /* Paragraph styling */
 p {
+    font-size: 22px !important; /* Increase font size for paragraphs */
     margin-bottom: 20px;
-    color: #f8f8f8 !important;
-    text-align: center !important;
+    color: #f8f8f8 !important; /* Off-white paragraph text */
+    text-align: center !important; /* Center paragraphs */
 }
 
 /* List Item Styling */
 li {
+    font-size: 26px !important; /* Increase size of list items */
     margin-bottom: 15px;
-    color: blue !important;
+    color: blue !important; /* Set text color to blue */
 }
 
 /* Link list styling */
 .link-list {
-    list-style-type: none;
-    padding-left: 0;
-    margin-left: 0;
-    position: relative;
-    width: 100%;
-    text-align: center !important;
-    margin-top: auto;
-    z-index: 3;
+    list-style-type: none; /* Remove bullet points */
+    padding-left: 0px; /* Adjust padding */
+    margin-left: 0px; /* Align links to the left */
+    font-size: 32px !important; /* Increase list font size */
+    position: relative; /* Make sure it stays in flow of content */
+    width: 100%; /* Full width for the links */
+    text-align: center !important; /* Align links to the left */
+    padding-left: 0x; /* Add some padding to the left */
+    margin-top: auto; /* Push the links to the bottom */
+    z-index: 3; /* Ensure links appear above the background */
 }
 
 /* Hyperlink Styling with block background */
 .link-list li a {
     text-decoration: none;
-    color: blue !important;
+    color: blue !important; /* Keep link color blue */
     font-weight: bold;
-    background-color: lightgray;
-    padding: 10px 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    text-align: center;
+    background-color: lightgray; /* Add background behind text */
+    padding: 10px 15px; /* Add padding to the background */
+    display: flex; /* Use flexbox to center content */
+    justify-content: center; /* Horizontally center the text */
+    align-items: center; /* Vertically center the text */
+    border-radius: 8px; /* Optional: rounded corners for the background */
+    margin-bottom: 10px; /* Add spacing between each link */
+    text-align: center; /* Ensure text is centered within the box */
 }
 
 .link-list li a:hover {
+    color: blue !important; /* Keep hover effect */
     text-decoration: underline;
-    background-color: #d3d3d3;
+    background-color: #d3d3d3; /* Darken background on hover */
 }
 
 /* Section styling */
@@ -271,13 +136,13 @@ section {
     margin: 0 auto;
     padding: 20px;
     z-index: 2;
-    background: none !important;
+    background: none !important; /* Remove black background */
 }
 
 /* Footer styling */
 footer {
     color: white !important;
-    text-align: left !important;
+    text-align: left !important; /* Align footer to the left */
     padding: 5px 20px !important;
-    font-size: 18px !important;
+    font-size: 18px !important; /* Slightly increase footer font size */
 }
