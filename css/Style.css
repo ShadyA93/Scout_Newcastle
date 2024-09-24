@@ -103,23 +103,27 @@ li {
     font-size: 32px !important; /* Increase list font size */
     position: absolute; /* Position the links absolutely */
     top: 50%; /* Center vertically */
-    left: 20px; /* Position links to the left */
+    left: 10px; /* Keep the links close to the left */
     transform: translateY(-50%); /* Ensure vertical centering */
-    z-index: 3; /* Ensure links appear above the background and overlay */
+    z-index: 3; /* Ensure links appear above the background */
 }
 
-/* Hyperlink Styling */
+/* Hyperlink Styling with block background */
 .link-list li a {
     text-decoration: none;
-    color: blue !important; /* Ensure the link color is blue */
+    color: blue !important; /* Keep link color blue */
     font-weight: bold;
-    padding: 10px 0; /* Add spacing to the links for better visibility */
-    
+    background-color: lightgray; /* Add background behind text */
+    padding: 10px 15px; /* Add padding to the background */
+    display: block; /* Display the links as block elements */
+    border-radius: 8px; /* Optional: rounded corners for the background */
+    margin-bottom: 10px; /* Add spacing between each link */
 }
 
 .link-list li a:hover {
-    color: blue !important; /* Keep the hover effect */
+    color: blue !important; /* Keep hover effect */
     text-decoration: underline;
+    background-color: #d3d3d3; /* Darken background on hover */
 }
 
 /* Section styling */
