@@ -16,7 +16,7 @@ body {
 /* Background container styling */
 .background-container {
     position: relative; /* Important for the overlay to work */
-    background-image: url('../89227347_106372954308706_932948217601982464_n.jpg');
+    background-image: url('89227347_106372954308706_932948217601982464_n.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
