@@ -98,9 +98,9 @@ li {
 /* Link list styling */
 .link-list {
     list-style-type: none; /* Remove bullet points */
-    padding: 0;
-    margin: 0;
-    font-size: 26px !important; /* Increase list font size */
+    padding-left: 0px; /* Adjust padding */
+    margin-left: 10px; /* Ensure alignment to the left */
+    font-size: 32px !important; /* Increase list font size */
     position: absolute; /* Position the links absolutely */
     top: 50%; /* Center vertically */
     left: 20px; /* Position links to the left */
@@ -114,6 +114,7 @@ li {
     color: blue !important; /* Ensure the link color is blue */
     font-weight: bold;
     padding: 10px 0; /* Add spacing to the links for better visibility */
+    
 }
 
 .link-list li a:hover {
