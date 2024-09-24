@@ -104,7 +104,7 @@ li {
     position: relative; /* Make sure it stays in flow of content */
     width: 100%; /* Full width for the links */
     text-align: center !important; /* Align links to the left */
-    padding-left: 20px; /* Add some padding to the left */
+    padding-left: 0x; /* Add some padding to the left */
     margin-top: auto; /* Push the links to the bottom */
     z-index: 3; /* Ensure links appear above the background */
 }
