@@ -114,7 +114,6 @@ li {
     color: blue !important; /* Ensure the link color is blue */
     font-weight: bold;
     padding: 10px 0; /* Add spacing to the links for better visibility */
-    display: block; /* Ensure the links are displayed as block elements */
 }
 
 .link-list li a:hover {
