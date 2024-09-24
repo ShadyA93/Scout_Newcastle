@@ -25,7 +25,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center content vertically */
+    justify-content: flex-start; /* Start content at the top */
     align-items: center; /* Center content horizontally */
     text-align: center; /* Center text alignment */
     padding: 0 20px; /* Add padding for better mobile view */
@@ -99,12 +99,13 @@ li {
 .link-list {
     list-style-type: none; /* Remove bullet points */
     padding-left: 0px; /* Adjust padding */
-    margin-left: 10px; /* Ensure alignment to the left */
+    margin-left: 0px; /* Align links to the left */
     font-size: 32px !important; /* Increase list font size */
-    position: absolute; /* Position the links absolutely */
-    top: 50%; /* Center vertically */
-    left: 10px; /* Keep the links close to the left */
-    transform: translateY(-50%); /* Ensure vertical centering */
+    position: relative; /* Make sure it stays in flow of content */
+    width: 100%; /* Full width for the links */
+    text-align: left !important; /* Align links to the left */
+    padding-left: 20px; /* Add some padding to the left */
+    margin-top: auto; /* Push the links to the bottom */
     z-index: 3; /* Ensure links appear above the background */
 }
 
@@ -115,7 +116,7 @@ li {
     font-weight: bold;
     background-color: lightgray; /* Add background behind text */
     padding: 10px 15px; /* Add padding to the background */
-    display: none; /* Display the links as block elements */
+    display: block; /* Display the links as block elements */
     border-radius: 8px; /* Optional: rounded corners for the background */
     margin-bottom: 10px; /* Add spacing between each link */
 }
