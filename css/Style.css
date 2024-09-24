@@ -29,6 +29,7 @@ body {
     align-items: center; /* Center content horizontally */
     text-align: center; /* Center text alignment */
     padding: 0 20px; /* Add padding for better mobile view */
+    z-index: 1; /* Make sure the background has a lower z-index */
 }
 
 /* Darker overlay to darken the background */
@@ -39,14 +40,14 @@ body {
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.8); /* Darker background overlay */
-    z-index: 0; /* Ensure the overlay stays behind the content */
+    z-index: 1; /* Ensure the overlay stays behind the content */
     pointer-events: none; /* Disable mouse interactions for the overlay */
 }
 
 /* Ensure that the text and other content are above the overlay */
 header, nav, section {
     position: relative;
-    z-index: 1; /* Ensure text stays on top of the overlay */
+    z-index: 2; /* Ensure text and links stay on top of the overlay */
 }
 
 /* Logo styling */
@@ -92,7 +93,6 @@ li {
     font-size: 24px !important; /* Increase size of list items */
     margin-bottom: 15px;
     color: blue !important; /* Set text color to blue */
-    text-align: left !important; /* Move list items to the left */
 }
 
 /* Link list styling */
@@ -101,8 +101,11 @@ li {
     padding: 0;
     margin: 0;
     font-size: 24px !important; /* Increase list font size */
-    text-align: left; /* Move link list to the left */
-    margin-left: 20px; /* Add margin to the left for better spacing */
+    position: absolute; /* Position the links absolutely */
+    top: 50%; /* Center vertically */
+    left: 20px; /* Position links to the left */
+    transform: translateY(-50%); /* Ensure vertical centering */
+    z-index: 3; /* Ensure links appear above the background and overlay */
 }
 
 /* Hyperlink Styling */
@@ -123,7 +126,7 @@ section {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    z-index: 1;
+    z-index: 2;
     background: none !important; /* Remove black background */
 }
 
