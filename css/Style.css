@@ -116,9 +116,12 @@ li {
     font-weight: bold;
     background-color: lightgray; /* Add background behind text */
     padding: 10px 15px; /* Add padding to the background */
-    display: block; /* Display the links as block elements */
+    display: flex; /* Use flexbox to center content */
+    justify-content: center; /* Horizontally center the text */
+    align-items: center; /* Vertically center the text */
     border-radius: 8px; /* Optional: rounded corners for the background */
     margin-bottom: 10px; /* Add spacing between each link */
+    text-align: center; /* Ensure text is centered within the box */
 }
 
 .link-list li a:hover {
