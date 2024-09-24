@@ -90,7 +90,7 @@ p {
 
 /* List Item Styling */
 li {
-    font-size: 24px !important; /* Increase size of list items */
+    font-size: 26px !important; /* Increase size of list items */
     margin-bottom: 15px;
     color: blue !important; /* Set text color to blue */
 }
@@ -100,7 +100,7 @@ li {
     list-style-type: none; /* Remove bullet points */
     padding: 0;
     margin: 0;
-    font-size: 24px !important; /* Increase list font size */
+    font-size: 26px !important; /* Increase list font size */
     position: absolute; /* Position the links absolutely */
     top: 50%; /* Center vertically */
     left: 20px; /* Position links to the left */
@@ -117,7 +117,7 @@ li {
 }
 
 .link-list li a:hover {
-    color: #00BFFF !important; /* Change link color on hover */
+    color: blue !important; /* Change link color on hover */
     text-decoration: underline;
 }
 
