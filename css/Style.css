@@ -31,9 +31,21 @@ body {
     padding: 0 20px; /* Add padding for better mobile view */
 }
 
-/* Remove any overlay or background */
+/* Create a semi-transparent overlay */
 .overlay {
-    display: none !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust the transparency level here */
+    z-index: 0; /* Ensure the overlay stays behind the content */
+    pointer-events: none; /* Disable mouse interactions for the overlay */
+}
+/* Ensure that the text and other content are above the overlay */
+header, nav, section {
+    position: relative;
+    z-index: 1; /* Ensure text stays on top of the overlay */
 }
 
 /* Logo styling */
