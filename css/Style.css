@@ -5,22 +5,21 @@
     box-sizing: border-box;
 }
 
-/* Increase the font size for all text and change to off-white */
+/* Font size adjustments for all text and change to off-white */
 body {
     font-family: 'Times New Roman', Times, serif;
     color: #f8f8f8 !important; /* Off-white text color */
-    line-height: 1.8;
-    position: relative;
-    font-size: 40px !important; /* Increase base font size */
+    line-height: 1.6;
+    font-size: 18px !important; /* Adjusted base font size */
 }
 
 /* Main Title Styling */
 .main-title {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 30px !important; /* Further increase the font size for the main title */
+    font-size: 28px !important; /* Reduced size for the main title */
     font-weight: bold;
     text-align: left;
-    margin-top: 50px;
+    margin-top: 30px;
     margin-bottom: 10px;
     color: #f8f8f8 !important; /* Off-white main title */
 }
@@ -28,30 +27,30 @@ body {
 /* Subheading Styling */
 .subheading {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 30px !important; /* Further increase the font size for the subheading */
+    font-size: 22px !important; /* Reduced size for the subheading */
     font-style: italic;
     text-align: left;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     color: #f8f8f8 !important; /* Off-white subheading */
 }
 
 /* Paragraph styling */
 p {
-    font-size: 32px !important; /* Further increase font size for paragraphs */
-    margin-bottom: 25px;
+    font-size: 16px !important; /* Reduced font size for paragraphs */
+    margin-bottom: 15px;
     color: #f8f8f8 !important; /* Off-white paragraph text */
 }
 
 /* List Item Styling */
 li {
-    font-size: 32px !important; /* Further increase the text size of list items */
+    font-size: 16px !important; /* Reduced size of list items */
     margin-bottom: 10px;
     color: #f8f8f8 !important; /* Off-white list items */
 }
 
 /* Customize bullet size and color */
 li::marker {
-    font-size:45px !important; /* Increase bullet size */
+    font-size: 12px !important; /* Reduced bullet size */
     color: #1E90FF !important; /* Change bullet color to blue (DodgerBlue) */
 }
 
@@ -69,41 +68,37 @@ footer {
     background-color: #0000FF !important; /* Change footer color to standard blue */
     color: white !important;
     text-align: left !important; /* Align footer to the left */
-    padding: 5px 20px !important; /* Reduce padding for smaller size */
-    position: relative;
-    width: 100%;
-    bottom: 0;
-    z-index: 2; /* Ensure footer is above the overlay */
-    font-size: 25px !important; /* Increase footer font size */
+    padding: 5px 20px !important;
+    font-size: 14px !important; /* Adjusted footer font size */
 }
 
 /* Link list at the bottom */
 .link-list {
-    list-style-type: none; /* Remove bullet points */
+    list-style-type: none;
     padding: 0;
     margin: 0;
-    font-size: 55px !important; /* Make the list larger */
+    font-size: 18px !important; /* Reduced list size */
 }
 
 .link-list li {
-    margin: 15px 0; /* Add spacing between list items */
+    margin: 10px 0; /* Add spacing between list items */
 }
 
 /* Hyperlink Styling */
 .link-list li a {
     text-decoration: none;
-    color: #1E90FF !important; /* Change link color to blue (DodgerBlue) */
+    color: #1E90FF !important;
     font-weight: bold;
 }
 
 .link-list li a:hover {
-    color: #00BFFF !important; /* Change link color to light blue (DeepSkyBlue) on hover */
+    color: #00BFFF !important;
     text-decoration: underline !important;
 }
 
 /* Fix the overlay positioning */
 .background-container {
-    position: relative; /* Important for the overlay to work */
+    position: relative;
     background-image: url('89227347_106372954308706_932948217601982464_n.jpg');
     background-size: cover;
     background-position: center;
@@ -115,7 +110,7 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    z-index: 1; /* Ensure the content is above the overlay */
+    z-index: 1;
 }
 
 /* Create a semi-transparent overlay */
@@ -125,28 +120,28 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7); /* Adjust the transparency level here */
-    z-index: 0; /* Ensure the overlay stays behind the content */
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 0;
 }
 
 /* Mobile and Tablet View */
 @media screen and (max-width: 768px) {
     body {
-        font-size: 40px !important; /* Increase mobile base font size */
-        line-height: 1.6;
+        font-size: 16px !important; /* Reduced mobile base font size */
+        line-height: 1.4;
     }
 
     .main-title {
-        font-size: 75px !important; /* Increase mobile title size */
+        font-size: 24px !important;
         text-align: center;
     }
 
     .subheading {
-        font-size: 40px !important; /* Increase mobile subheading size */
+        font-size: 20px !important;
     }
 
     p {
-        font-size: 22px !important; /* Increase mobile paragraph size */
+        font-size: 14px !important; 
     }
 
     section {
@@ -155,15 +150,15 @@ footer {
     }
 
     li {
-        font-size: 32px !important; /* Increase mobile list item size */
+        font-size: 14px !important;
     }
 
     li::marker {
-        font-size: 35px !important; /* Increase mobile bullet size */
+        font-size: 10px !important; 
     }
 
     footer {
-        font-size: 20px !important; /* Increase footer font size */
+        font-size: 12px !important; 
     }
 
     img {
@@ -172,7 +167,7 @@ footer {
     }
 
     h1, h2, h3 {
-        margin-top: 15px;
-        margin-bottom: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 }
